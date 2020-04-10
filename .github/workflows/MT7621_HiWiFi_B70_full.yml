@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: OpenWrt_x86_full
+name: MT7621_HiWiFi_B70_full
 
 on:
 #  release:
@@ -112,7 +112,7 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_x86_full
+        name: MT7621_HiWiFi_B70_full
         path: ${{ env.FIRMWARE }}
 
     - name: Upload firmware to cowtransfer
